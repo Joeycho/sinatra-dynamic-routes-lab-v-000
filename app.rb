@@ -21,7 +21,7 @@ class App < Sinatra::Base
     @phrase = params[:phrase]
     
     
-    "#{3.times each
+    "#{3.each do
       puts @phrase
       end}"
     
