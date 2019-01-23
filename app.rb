@@ -45,11 +45,8 @@ class App < Sinatra::Base
     "#{5.times do |i|
       @str+=@arr[i]+"."
     }"
-    
     @str
     
-    "#{@word1} #{@word2} #{@word3} #{@word4} #{@word5}"
-  
   end
   
   get '/:operation/:number1/:number2' do
