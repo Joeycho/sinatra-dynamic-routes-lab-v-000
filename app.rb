@@ -20,15 +20,14 @@ class App < Sinatra::Base
     @number = params[:number].to_i
     @phrase = params[:phrase]
     
-    @collection = []
+    @str = ""
     
-    "#{@number.times do |i|
-       @collection << @phrase
+    "#{@number.times do 
+       @str+=@phrase+" "
       end}"
+      
+      @str
     
-    @collection.each |i|
-      return i
-    end
     
   end
   
