@@ -22,9 +22,7 @@ class App < Sinatra::Base
     
     
     "#{3.times do
-      yield @phrase do
       return @phrase
-      end
       end}"
     
     
