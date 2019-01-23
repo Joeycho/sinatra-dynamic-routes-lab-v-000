@@ -22,7 +22,7 @@ class App < Sinatra::Base
     
     
     "#{3.times do |i|
-      print i
+      print @phrase
       end}"
     
     
