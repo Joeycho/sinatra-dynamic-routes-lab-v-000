@@ -32,16 +32,18 @@ class App < Sinatra::Base
   end
   
   get '/say/:word1/:word2/:word3/:word4/:word5' do
-    @word1 = params[:word1]
-    @word2 = params[:word2]
-    @word3 = params[:word3]
-    @word4 = params[:word4]
-    @word5 = params[:word5]
+    @arr =[]
+    
+    @arr << params[:word1]
+    @arr << params[:word2]
+    @arr << params[:word3]
+    @arr << params[:word4]
+    @arr << params[:word5]
     
     @str =""
     
     "#{5.times do |i|
-      @str+=@word#{i}+"."
+      @str+=@arr[i]+"."
     }"
     
     @str
