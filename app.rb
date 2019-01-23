@@ -26,7 +26,9 @@ class App < Sinatra::Base
        @collection << @phrase
       end}"
     
-    @collection_to_s
+    @collection.each |i|
+      return i
+    end
     
   end
   
