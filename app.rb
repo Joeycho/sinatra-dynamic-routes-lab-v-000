@@ -20,11 +20,13 @@ class App < Sinatra::Base
     @number = params[:number].to_i
     @phrase = params[:phrase]
     
+    @collection = []
     
-    "#{3.times do |i|
-      puts @phrase
+    "#{@number.times do |i|
+       @collection << @phrase
       end}"
     
+    @collection_to_s
     
   end
   
