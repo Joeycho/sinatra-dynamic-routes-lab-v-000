@@ -44,7 +44,7 @@ class App < Sinatra::Base
     
     "#{5.times do |i|
       @str+=@arr[i]+"."
-    }"
+    end}"
     @str
     
   end
